@@ -11,3 +11,66 @@
 
 /* = Theme customization go here
 -------------------------------------------------------------- */
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  color: #dbd4c1 !important;
+  text-transform: inherit !important;
+}
+
+
+
+/* BUTTONS */
+.penci-slider_btnwrap .pencislider-btn {
+  border-color: #6a3e33 !important;
+  color: #dbd4c1 !important;
+  background-color: #6a3e33 !important;
+  text-transform: inherit !important;
+  height: 50px !important;
+  padding: 0 30px !important;
+  font-size: 16px !important;
+}
+.penci-slider_btnwrap .pencislider-btn:hover {
+  background-color: #dbd4c1 !important;
+  color: #6a3e33 !important;
+}
+
+
+/* HEADER */
+#header {
+  margin-bottom:0px
+}
+
+
+/* SLIDER */
+h2.pencislider-title {
+  font-size: 3em !important
+}
+
+
+/* FP CUSTOM */
+#block-categories h2 {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+}
+#block-categories .wpb_wrapper {
+  position: relative;
+  height: 100%
+}
+#block-categories .wpb_content_element {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+#block-categories img {
+  height: 100%;
+  object-fit: cover;
+}
+#block-categories .vc_single_image-wrapper {
+  height: 100%
+}
