@@ -38,7 +38,7 @@
 				}
 			} );
 		}
-		
+
 		$(".penci-jump-recipe").on( 'click', function (e) {
 			e.preventDefault();
 			var id = $(this).attr("href"),
@@ -55,7 +55,7 @@
 				scrollTop: $scroll_to
 			}, 'fast');
 		});
-		
+
 		// Call back fitvid when click load more button on buddypress
 		$( 'body.buddypress .activity .load-more a' ).on( 'click', function () {
 			$(document).ajaxStop(function() {
@@ -63,7 +63,7 @@
 			});
 		} );
 	}
-	
+
 	/* Cookie Law
 	 ---------------------------------------------------------------*/
 	PENCI.cookie = function () {
@@ -259,7 +259,7 @@
 				}
 
 				$this.imagesLoaded( function() { $this.owlCarousel( owl_args ); } );
-				
+
 				$this.on('initialize.owl.carousel', function(event) {
 					$this.closest('.featured-area').addClass('penci-featured-loaded');
 				});
@@ -472,20 +472,20 @@
 			$this.children().toggleClass( 'fa-angle-up' );
 			$this.parent().next().slideToggle( 'fast' );
 		} );
-		
+
 		$( '.penci-vernav-cparent #sidebar-nav .menu li.menu-item-has-children > a' ).on( 'click', function ( e ) {
 			var $this = $( this );
 			e.preventDefault();
 			$this.children().children().toggleClass( 'fa-angle-up' );
 			$this.next().slideToggle( 'fast' );
 		} );
-		
+
 		// Close sidebar nav
 		$( '#close-sidebar-nav' ).on( 'click', function () {
 			$( 'body' ).removeClass( 'open-sidebar-nav' );
 		} );
 	}
-	
+
 	PENCI.toggleMenuHumburger = function () {
 		var $menuhumburger = $( '.penci-menu-hbg' );
 		if ( $menuhumburger.length ) {
@@ -506,7 +506,7 @@
 				$this.children().toggleClass( 'fa-angle-up' );
 				$this.parent().next().slideToggle( 'fast' );
 			} );
-			
+
 			$( '.penci-hbg-cparent .penci-menu-hbg .menu li.menu-item-has-children > a' ).on( 'click', function ( e ) {
 				var $this = $( this );
 				e.preventDefault();
@@ -528,7 +528,7 @@
 				$body.addClass( sidebarClass );
 				$button.addClass( 'active' );
 			} );
-			
+
 			// Scroll menu hamburger and callback lazyload
 			$menuhumburger.on('scroll', function() {
 				$('.penci-menu-hbg .penci-lazy').Lazy({
@@ -664,7 +664,7 @@
 							videoStartTime : $startime,
 							videoPlayOnlyVisible : false
 						};
-					
+
 					jarallax( $this, $jarallaxArgs );
 					$('.featured-area').addClass( 'loaded-wait' );
 					setTimeout(function(){
@@ -906,7 +906,7 @@
 				});
 
 				$( ".container" ).fitVids();
-				
+
 				$( 'a[data-rel^="penci-gallery-image-content"]' ).magnificPopup( {
 					type               : 'image',
 					closeOnContentClick: true,
@@ -1009,7 +1009,7 @@
 			}
 		});
 	},
-	
+
 	/* Jarallax
 	 ----------------------------------------------------------------*/
 	PENCI.Jarallax = function () {
@@ -1025,7 +1025,7 @@
 			} );
 		} );
 	},
-	
+
 	/* Related Popup
 	 ----------------------------------------------------------------*/
 	PENCI.RelatedPopup = function () {
@@ -1036,7 +1036,7 @@
 				$('.penci-flag-rlt-popup').bind('inview', function(event, isInView, visiblePartX, visiblePartY) {
 					if ( ! rltpopup.hasClass( 'rltpopup-notshow-again' ) && isInView ) {
 						rltpopup.addClass('rltpopup-show-up');
-						
+
 						rltclose.on("click", function(e){
 							e.preventDefault();
 							rltpopup.removeClass('rltpopup-show-up').addClass('rltpopup-notshow-again');
